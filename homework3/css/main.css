@@ -1,0 +1,233 @@
+body { 
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 15px;
+    padding:  0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1 {
+    font-family:'Ubuntu';
+    font-size: 37px;
+}
+
+
+p {
+    line-height: 1.65em;
+}
+span {
+    font-size: 59px;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+header {
+    
+    background: rgba(78,189,254,1);
+    background: -moz-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(135deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 ); 
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #fff;
+
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;  
+}
+
+.offer {
+  width: 560px;
+  }
+  .title {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 37px;
+    width: 560px;
+  }
+  .intro, .btn {
+      font-family: "Open Sans";
+      font-size: 16px;
+  }
+  .intro {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 400px;
+    text-align: left;
+  }
+  .btn {
+    background: #ffd429;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 222px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border-radius: 3px;
+    }
+    .btn:hover {
+        background: #d38e0f;
+    }
+    .travel {
+        width: 560px;
+    }
+    .dreams {
+        padding-top: 114px;
+        padding-bottom: 120px;
+    }
+    .section-title {
+        font-size: 30px;
+        text-align: center;
+    }
+.steps {
+    display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+.step-title, .step-text {
+    text-align: center;
+}
+.step-title {
+    margin-top:80px;
+}
+.step {
+    width: 289px;
+    background: url('../img/icon.jpg') no-repeat center top;
+    padding-bottom: 35px;
+   
+}
+.step2 {
+    background: url('../img/icon2.jpg') no-repeat center top;
+}
+.step3 {
+    background: url('../img/icon3.jpg') no-repeat center top;
+}
+.section-title {
+    padding-bottom: 80px;
+}
+.order {
+    background: #efecf4;
+}
+.section-title-order {
+    padding-top: 110px
+}
+.input {
+    width: 345px;
+    border: 1px solid #bbbbbb;
+    font-family: 'Ubuntu', sans-serif;
+    color: #bbbbbb;
+    font-size: 15px;
+    display: block;
+    padding: 23px;
+    margin-bottom: 19px;
+}
+.btn-form {
+    cursor: pointer;
+    width: 345px;
+}
+.form {
+    padding-bottom: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    background: #164d7a;
+    height: 140px;
+    
+}
+.credits {
+    font-family: "Open Sans";
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    color: #fff;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.header {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}    
+	.wrapper {
+		flex-direction: column;
+		margin-top: 60px;
+	}
+	.travel {
+		margin-top: 30px;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: 100%;
+	}
+	.steps {
+		flex-direction: column;
+		margin-bottom: -40px;
+	}
+	.step {
+		width: auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.travel {
+		width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.btn_1 {
+		width: auto;
+	}
+	.intro {
+		text-align: center;
+	}
+	.title {
+		text-align: center;
+	} 
+}
